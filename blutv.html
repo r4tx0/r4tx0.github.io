@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>BluTV Hesap Üretici</title>
+                <style>
+                        body {
+                                    background-color: black;
+                                                text-align: center;
+                                                            padding-top: 50px;
+                                                                    }
+                                                                            .neo-button {
+                                                                                        font-size: 20px;
+                                                                                                    color: red;
+                                                                                                                background: rgba(255, 0, 0, 0.2);
+                                                                                                                            padding: 15px 30px;
+                                                                                                                                        border-radius: 10px;
+                                                                                                                                                    text-decoration: none;
+                                                                                                                                                                box-shadow: 0 0 10px red, 0 0 40px red;
+                                                                                                                                                                            transition: 0.3s;
+                                                                                                                                                                                    }
+                                                                                                                                                                                            .neo-button:hover {
+                                                                                                                                                                                                        box-shadow: 0 0 20px red, 0 0 60px red;
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                                    </style>
+                                                                                                                                                                                                                    </head>
+                                                                                                                                                                                                                    <body>
+                                                                                                                                                                                                                        <nav>
+                                                                                                                                                                                                                                <a href="index.html" class="neo-button">Ana Sayfa</a>
+                                                                                                                                                                                                                                    </nav>
+                                                                                                                                                                                                                                    </body>
+                                                                                                                                                                                                                                    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>BluTv Hesap Üretici</title>
+                <style>
+                        body {
+                                    background-color: black;
+                                                color: red;
+                                                            text-align: center;
+                                                                        font-family: Arial, sans-serif;
+                                                                                    margin: 0;
+                                                                                                padding: 20px;
+                                                                                                        }
+                                                                                                                h1 {
+                                                                                                                            text-shadow: 0 0 10px red, 0 0 20px red;
+                                                                                                                                    }
+                                                                                                                                            #nameDisplay {
+                                                                                                                                                        font-size: 30px;
+                                                                                                                                                                    margin: 20px;
+                                                                                                                                                                                text-shadow: 0 0 10px red, 0 0 20px red;
+                                                                                                                                                                                        }
+                                                                                                                                                                                                .generate-btn {
+                                                                                                                                                                                                            background: transparent;
+                                                                                                                                                                                                                        border: 2px solid red;
+                                                                                                                                                                                                                                    color: red;
+                                                                                                                                                                                                                                                font-size: 20px;
+                                                                                                                                                                                                                                                            padding: 10px 20px;
+                                                                                                                                                                                                                                                                        cursor: pointer;
+                                                                                                                                                                                                                                                                                    text-shadow: 0 0 10px red;
+                                                                                                                                                                                                                                                                                                transition: 0.3s;
+                                                                                                                                                                                                                                                                                                        }
+                                                                                                                                                                                                                                                                                                                .generate-btn:hover {
+                                                                                                                                                                                                                                                                                                                            background: red;
+                                                                                                                                                                                                                                                                                                                                        color: black;
+                                                                                                                                                                                                                                                                                                                                                    box-shadow: 0 0 20px red, 0 0 40px red;
+                                                                                                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                                                                                                                </style>
+                                                                                                                                                                                                                                                                                                                                                                </head>
+                                                                                                                                                                                                                                                                                                                                                                <body>
+
+                                                                                                                                                                                                                                                                                                                                                                    <h1>BluTV Hesap Üretici (bakımda)</h1>
+                                                                                                                                                                                                                                                                                                                                                                        <div id="nameDisplay">Hesaplar burada görünecek</div>
+                                                                                                                                                                                                                                                                                                                                                                            <button class="generate-btn" onclick="generateName()">Hesap Üret</button>
+
+                                                                                                                                                                                                                                                                                                                                                                                <script>
+                                                                                                                                                                                                                                                                                                                                                                                        // Buraya istediğin isimleri ekleyebilirsin
+                                                                                                                                                                                                                                                                                                                                                                                                var names = ["yakin zamanda gelecek", "bakımda", ];
+
+                                                                                                                                                                                                                                                                                                                                                                                                        function generateName() {
+                                                                                                                                                                                                                                                                                                                                                                                                                    if (names.length > 0) {
+                                                                                                                                                                                                                                                                                                                                                                                                                                    var name = names.shift(); // Listenin ilk ismini alır
+                                                                                                                                                                                                                                                                                                                                                                                                                                                    document.getElementById("nameDisplay").innerText = name;
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                } else {
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                document.getElementById("nameDisplay").innerText = "Daha Ne istiyorsun!";
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    }
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </script>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </body>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </html>

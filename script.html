@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Scriptler</title>
+                <style>
+                        body {
+                                    background-color: black;
+                                                text-align: center;
+                                                            padding-top: 50px;
+                                                                    }
+                                                                            .neo-button {
+                                                                                        font-size: 20px;
+                                                                                                    color: red;
+                                                                                                                background: rgba(255, 0, 0, 0.2);
+                                                                                                                            padding: 15px 30px;
+                                                                                                                                        border-radius: 10px;
+                                                                                                                                                    text-decoration: none;
+                                                                                                                                                                box-shadow: 0 0 10px red, 0 0 40px red;
+                                                                                                                                                                            transition: 0.3s;
+                                                                                                                                                                                    }
+                                                                                                                                                                                            .neo-button:hover {
+                                                                                                                                                                                                        box-shadow: 0 0 20px red, 0 0 60px red;
+                                                                                                                                                                                                                }
+                                                                                                                                                                                                                    </style>
+                                                                                                                                                                                                                    </head>
+                                                                                                                                                                                                                    <body>
+                                                                                                                                                                                                                        <nav>
+                                                                                                                                                                                                                                <a href="index.html" class="neo-button">Ana Sayfa</a>
+                                                                                                                                                                                                                                    </nav>
+                                                                                                                                                                                                                                    </body>
+                                                                                                                                                                                                                                    </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Neo Script Paylaşım</title>
+                <style>
+                        body { background-color: black; color: red; font-family: "Courier New", monospace; text-align: center; }
+                                button { background-color: red; color: black; padding: 10px; border: none; cursor: pointer; margin: 10px; }
+                                        button:hover { background-color: darkred; }
+                                                .script { border: 1px solid red; padding: 10px; margin: 10px; }
+                                                    </style>
+                                                    </head>
+                                                    <body>
+                                                        <h1>R4T Scriptler</h1>
+                                                            <h2>Eklenen Scriptler</h2>
+                                                                <div id="script-list"></div>
+
+                                                                    <script>
+                                                                            function loadScripts() {
+                                                                                        let scripts = JSON.parse(localStorage.getItem("scripts")) || [];
+                                                                                                    let listDiv = document.getElementById("script-list");
+                                                                                                                listDiv.innerHTML = "";
+
+                                                                                                                            scripts.forEach((script) => {
+                                                                                                                                            listDiv.innerHTML += `
+                                                                                                                                                                <div class="script">
+                                                                                                                                                                                        <h2>${script.title}</h2>
+                                                                                                                                                                                                                <p>${script.description}</p>
+                                                                                                                                                                                                                                        <img src="${script.image}" alt="Script Görseli" style="width:200px;">
+                                                                                                                                                                                                                                                                <br>
+                                                                                                                                                                                                                                                                                        <a href="${script.downloadLink}" target="_blank">
+                                                                                                                                                                                                                                                                                                                    <button>İndir</button>
+                                                                                                                                                                                                                                                                                                                                            </a>
+                                                                                                                                                                                                                                                                                                                                                                </div>
+                                                                                                                                                                                                                                                                                                                                                                                `;
+                                                                                                                                                                                                                                                                                                                                                                                            });
+                                                                                                                                                                                                                                                                                                                                                                                                    }
+
+                                                                                                                                                                                                                                                                                                                                                                                                            document.addEventListener("DOMContentLoaded", loadScripts);
+                                                                                                                                                                                                                                                                                                                                                                                                                </script>
+                                                                                                                                                                                                                                                                                                                                                                                                                </body>
+                                                                                                                                                                                                                                                                                                                                                                                                                </html>
